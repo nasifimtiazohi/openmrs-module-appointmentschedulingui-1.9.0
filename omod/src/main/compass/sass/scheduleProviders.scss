@@ -1,0 +1,91 @@
+#createAppointmentBlock {
+  width: 69%;
+}
+
+#viewAppointmentBlock {
+  width: 69%;
+}
+
+selectmultipleappointmenttypes {
+  width: 44%;
+}
+
+#delete-appointment-block-modal {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 150px;
+  z-index: 99;
+}
+
+#delete-appointment-block-modal-buttons {
+  padding: 10px;
+}
+
+#filter-parameters {
+  display: inline-block;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+#filter-provider {
+  display: inline-block;
+}
+
+.inline-box {
+  display: inline-block;
+  padding: 3px;
+}
+
+#start-time, #end-time {
+  input {
+    width: 30px;
+  }
+
+  tr {
+    border: none;
+
+    td {
+      border: none;
+      padding: 2px 2px;
+
+      button {
+        padding: 2px 2px;
+      }
+    }
+  }
+}
+
+#appointment-block-form-buttons {
+  padding: 10px;
+}
+
+/* class of the calendar header */
+.fc-header {
+  tr {
+    border: none;
+
+    td {
+      border: none;
+    }
+  }
+}
+
+.container-fluid {
+  padding-right: unset !important;
+  padding-left: unset !important;
+}
+
+#allAppointmentTypesModal a:hover, .viewAllAppointmentTypes a:hover {
+  color: #3399ff !important;
+  text-decoration: underline !important;
+}
+
+#allAppointmentTypesModal a, .viewAllAppointmentTypes > a {
+  color: #007fff !important;
+  text-decoration: none !important;
+}
+

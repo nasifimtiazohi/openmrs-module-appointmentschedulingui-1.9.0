@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module configVersion="1.2">
+
+	<!-- Module Properties -->
+	<id>${project.parent.artifactId}</id>
+	<name>${project.parent.name}</name>
+	<version>${project.parent.version}</version>
+	<package>${project.parent.groupId}.${project.parent.artifactId}</package>
+	<author>openmrs</author>
+	<description>
+		${project.parent.description}
+	</description>
+	<updateURL>https://dev.openmrs.org/modules/download/${project.parent.artifactId}/update.rdf</updateURL>
+	<require_version>${openMRSVersion}</require_version>
+	<!-- / Module Properties -->
+	
+	<!-- Module Activator -->
+	<activator>${project.parent.groupId}.${project.parent.artifactId}.AppointmentSchedulingUIActivator</activator>
+
+
+    <!-- Dependent modules -->
+    <require_modules>
+        <require_module version="${appointmentSchedulingVersion}">
+            org.openmrs.module.appointmentscheduling
+        </require_module>
+        <require_module version="${appframeworkVersion}">
+            org.openmrs.module.appframework
+        </require_module>
+        <require_module version="${uiframeworkVersion}">
+            org.openmrs.module.uiframework
+        </require_module>
+        <require_module version="${coreappsVersion}">
+            org.openmrs.module.coreapps
+        </require_module>
+        <require_module version="${uicommonsVersion}">
+            org.openmrs.module.uicommons
+        </require_module>
+        <require_module versioon="${webservicesRestVersion}">
+            org.openmrs.module.webservices.rest
+        </require_module>
+        <require_module versioon="${reportingVersion}">
+            org.openmrs.module.reporting
+        </require_module>
+        <require_module versioon="${emrapiVersion}">
+            org.openmrs.module.emrapi
+        </require_module>
+        <require_module versioon="${htmlformentryVersion}">
+            org.openmrs.module.htmlformentry
+        </require_module>
+        <require_module versioon="${appuiVersion}">
+            org.openmrs.module.appui
+        </require_module>
+    </require_modules>
+	
+	<!-- Maps hibernate file's, if present -->
+	<mappingFiles>
+				
+	</mappingFiles>
+
+    <!-- Internationalization -->
+    <!-- All message codes should start with ${project.parent.artifactId}. -->
+    <messages>
+        <lang>en</lang>
+        <file>messages.properties</file>
+    </messages>
+    <messages>
+        <lang>fr</lang>
+        <file>messages_fr.properties</file>
+    </messages>
+    <messages>
+        <lang>es</lang>
+        <file>messages_es.properties</file>
+    </messages>
+    <messages>
+        <lang>ht</lang>
+        <file>messages_ht.properties</file>
+    </messages>
+    <messages>
+        <lang>pt</lang>
+        <file>messages_pt.properties</file>
+    </messages>
+    <messages>
+        <lang>de</lang>
+        <file>messages_de.properties</file>
+    </messages>
+    <messages>
+        <lang>de</lang>
+        <file>messages_de.properties</file>
+    </messages>
+    <messages>
+        <lang>fa</lang>
+        <file>messages_fa.properties</file>
+    </messages>
+    <messages>
+        <lang>si</lang>
+        <file>messages_si.properties</file>
+    </messages>
+    <messages>
+        <lang>hi</lang>
+        <file>messages_hi.properties</file>
+    </messages>
+    <messages>
+        <lang>ar</lang>
+        <file>messages_ar.properties</file>
+    </messages>
+    <messages>
+        <lang>pl</lang>
+        <file>messages_pl.properties</file>
+    </messages>
+    <messages>
+        <lang>it</lang>
+        <file>messages_it.properties</file>
+    </messages>
+    <messages>
+        <lang>el</lang>
+        <file>messages_el.properties</file>
+    </messages>
+    <messages>
+        <lang>ru</lang>
+        <file>messages_ru.properties</file>
+    </messages>
+    <messages>
+        <lang>lt</lang>
+        <file>messages_lt.properties</file>
+    </messages>
+    <messages>
+        <lang>hy</lang>
+        <file>messages_hy.properties</file>
+    </messages>
+    <messages>
+        <lang>te</lang>
+        <file>messages_te.properties</file>
+    </messages>
+    <messages>
+        <lang>sw</lang>
+        <file>messages_sw.properties</file>
+    </messages>
+    <messages>
+        <lang>ku</lang>
+        <file>messages_ku.properties</file>
+    </messages>
+    <messages>
+        <lang>id_ID</lang>
+        <file>messages_id_ID.properties</file>
+    </messages>
+   
+   <globalProperty>
+        <property>appointmentschedulingui.includeWeekends</property>
+        <defaultValue>false</defaultValue>
+        <description>
+            Defines whether the calendar should include weekends 
+        </description>
+    </globalProperty>
+
+    <privilege>
+        <name>App: appointmentschedulingui.appointmentTypes</name>
+        <description>Access to the Manage Service Types app</description>
+    </privilege>
+
+    <privilege>
+        <name>App: appointmentschedulingui.providerSchedules</name>
+        <description>Access to the Manage Provider Schedules app</description>
+    </privilege>
+
+    <privilege>
+        <name>App: appointmentschedulingui.viewAppointments</name>
+        <description>Access to Manage Appointments and Daily Scheduled Appointments (but not the ability to book appointments from these pages)</description>
+    </privilege>
+
+    <privilege>
+        <name>Task: appointmentschedulingui.bookAppointments</name>
+        <description>Ability book appointments, cancel appointments, and flag appointments as needs reschedule; Access to the Manage Rescheduled app</description>
+    </privilege>
+
+    <privilege>
+        <name>Task: appointmentschedulingui.overbookAppointments</name>
+        <description>Ability to overbook time slots</description>
+    </privilege>
+
+    <privilege>
+        <name>Task: appointmentschedulingui.requestAppointments</name>
+        <description>Ability to request an appointment for a patient</description>
+    </privilege>
+
+    <privilege>
+        <name>App: appointmentschedulingui.home</name>
+        <description>Ability to view the appointment app on the home page</description>
+    </privilege>
+
+</module>
+

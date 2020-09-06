@@ -1,0 +1,13 @@
+
+.create-appointment-request {
+
+  #min-time-frame-value, #max-time-frame-value, #min-time-frame-units, #max-time-frame-units {
+    display: inline-block;
+    min-width: 0px;
+  }
+
+  #notes {
+    height: 100px;
+  }
+
+}

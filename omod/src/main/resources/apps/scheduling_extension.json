@@ -1,0 +1,21 @@
+[
+    {
+        "id": "appointmentschedulingui.tab",
+        "extensionPointId": "patientDashboard.tabs",
+        "type": "link",
+        "label": "appointmentschedulingui.appointmentsTab.label",
+        "requiredPrivilege": "App: appointmentschedulingui.viewAppointments",
+        "extensionParams": {
+            "provider": "appointmentschedulingui",
+            "fragment": "appointmentsTab"
+        }
+    },
+    {
+        "id": "${project.parent.groupId}.${project.parent.artifactId}.firstColumnFragments.patientDashboard.patientAppointments",
+        "extensionPointId": "patientDashboard.firstColumnFragments",
+        "extensionParams": {
+            "provider": "${project.parent.artifactId}",
+            "fragment": "miniPatientAppointments"
+        }
+    }
+]
