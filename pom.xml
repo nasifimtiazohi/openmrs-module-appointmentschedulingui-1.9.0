@@ -42,7 +42,7 @@
         <reportingVersion>0.10.6</reportingVersion>
         <serializationxstreamVersion>0.2.12</serializationxstreamVersion>
         <providermanagementVersion>2.5.0</providermanagementVersion>
-        <appuiVersion>1.7</appuiVersion>
+        <appuiVersion>1.13.0</appuiVersion>
         <uicommonsVersion>2.1</uicommonsVersion>
         <coreappsVersion>1.11.1</coreappsVersion>
         <webservicesRestVersion>2.6</webservicesRestVersion>
